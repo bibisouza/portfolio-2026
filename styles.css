@@ -1,0 +1,513 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* página */
+
+body {
+  min-height: 100vh;
+  background-color: #ff5294;
+  background-image: url("../assets/textura.png");
+  background-size: cover;
+  background-position: center;
+  font-family: "Quicksand", sans-serif;
+}
+
+.page {
+  position: relative;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.main-title {
+  font-family: "GayaTrial";
+  font-size: clamp(150px, 15vw, 340px);
+  color: #f5f5f5;
+  text-align: center;
+  margin-top: clamp(200px, 20vh, 180px);
+  line-height: 0.9;
+
+  text-shadow: 
+  -2px -2px 0 #000,
+  3px -3px 0 #000,
+  -2px 2px 0 #000,
+  3px 3px 0 #000;
+}
+
+.star {
+  position: absolute;
+  top: clamp(100px, 6vh, 100px);
+  left: 50%;
+  transform: translateX(-50%);
+  width: clamp(40px, 6vw, 320px);
+}
+
+.footer {
+  position: absolute;
+  bottom: clamp(20px, 4vh, 60px);
+  left: clamp(20px, 4vw, 60px);
+  right: clamp(20px, 4vw, 60px);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.year {
+  font-family: "GayaTrial";
+  font-size: clamp(24px, 4vw, 50px);
+}
+
+.author {
+  text-align: right;
+  font-family: "GayaTrial";
+  font-size: clamp(20px, 4vw, 35px);
+}
+
+.bt-next {
+  position: absolute;
+  top: clamp(20px, 4vh, 60px);
+  right: clamp(20px, 4vw, 60px);
+}
+
+.bt-next img {
+  width: clamp(30px, 4vw, 60px);
+}
+
+/* sobre mim */
+
+.page-2 {
+  background-color: #000;
+  background-image: url("assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  position:absolute;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.banner img {
+ width: 100%;
+ display: block;
+ margin: 40px 0;
+}
+
+.header-div {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.div-title {
+  font-family: "GayaTrial";
+  font-size: 180px;
+  align-items: center;
+  text-align: center;
+  color: #f5f5f5;
+
+  text-shadow: 
+  -2px -2px 0 #ff5294,
+  3px -3px 0 #000,
+  -2px 2px 0 #ff5294,
+  3px 3px 0 #000;
+}
+
+.subtitle {
+  font-family: "Quicksand";
+  align-items: center;
+  text-align: center;
+  color: #ff5294;
+  font-size: 40px;
+}
+
+.signature {
+  font-size: 50px;
+  margin-top: 20px;
+  font-family: "GayaTrial";
+  color: #ff5294;
+
+  text-shadow: 
+  -0.5px -0.5px 0 #f5f5f5,
+  1.5px -1.5px 0 #000,
+  -0.5px 0.5px 0 #f5f5f5,
+  1.5px 1.5px 0 #000;
+}
+
+.about-text {
+  margin-top: 40px;
+  font-size: 30px;
+  color: #f5f5f5;
+  line-height: 1.6;
+}
+
+.english-text {
+  color: #ff5294;
+  margin-top: 30px;
+  opacity: 0.9;
+}
+
+.skills {
+  margin: 60px;
+}
+
+.skills-title {
+  font-family: "GayaTrial";
+  font-size: 40px;
+  color: #ff5294;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 20px;
+
+  text-shadow: 
+  -0.5px -0.5px 0 #f5f5f5,
+  1.5px -1.5px 0 #000,
+  -0.5px 0.5px 0 #f5f5f5,
+  1.5px 1.5px 0 #000;
+}
+
+.skills-list {
+  display: flex;
+  gap: 150px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.skills-list ul {
+  list-style: none;
+  font-size: 30px;
+  color: #f5f5f5;
+}
+
+.navigation {
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+.navigation img {
+  width: clamp(25px, 4vw, 35px);
+}
+
+/* 3ª página */
+.page-3 {
+  position: relative;
+  background-color: #000;
+  background-image: url("assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.project-container {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5%;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  color: #ff5294;
+  font-weight: bold;
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+.project-category {
+  color: #f5f5f5;
+  font-size: clamp(15px, 4vw, 25px);
+  margin-top: 4%;
+}
+
+.subtitle-en {
+  color: #ff5294;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-description {
+  color: #f5f5f5;
+  font-size: clamp(15px, 3vw, 20px);
+  margin-top: 10%;
+}
+
+.proj-description-en {
+  color: #ff5294;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.list-flow {
+  color: #f5f5f5;
+  font-size: 20px;
+  margin-top: 15%;
+}
+
+.list-flow-en {
+  color: #ff5294;
+  font-size: 15px;
+  margin-top: 3%;
+  opacity: 0.9;
+}
+
+.brinq-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.star-banner {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.star-banner:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* 4ª página */
+.page-4 {
+  position: relative;
+  background-color: #000;
+  background-image: url("assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.project-container {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 5%;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  color: #ff5294;
+  font-weight: bold;
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+.project-category {
+  color: #f5f5f5;
+  font-size: clamp(15px, 4vw, 25px);
+  margin-top: 4%;
+}
+
+.subtitle-en {
+  color: #ff5294;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-description {
+  color: #f5f5f5;
+  font-size: clamp(15px, 3vw, 20px);
+  margin-top: 10%;
+}
+
+.proj-description-en {
+  color: #ff5294;
+  margin-top: 2%;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.list-flow {
+  color: #f5f5f5;
+  font-size: 20px;
+  margin-top: 8%;
+}
+
+.list-flow-en {
+  color: #ff5294;
+  font-size: 18px;
+  margin-top: 3%;
+  opacity: 0.9;
+}
+
+.boa-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.star-banner {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.star-banner:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* 5ª página */
+.page-5 {
+  position: relative;
+  background-color: #000;
+  background-image: url("assets/banner.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.project-container {
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  padding: 0 5%;
+}
+
+.project-info {
+  flex: 1;
+}
+
+.project-title {
+  color: #ff5294;
+  font-weight: bold;
+  font-size: clamp(20px, 4vw, 30px);
+}
+
+.project-category {
+  color: #f5f5f5;
+  font-size: clamp(15px, 4vw, 25px);
+  margin-top: 4%;
+}
+
+.subtitle-en {
+  color: #ff5294;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-description {
+  color: #f5f5f5;
+  font-size: clamp(15px, 3vw, 20px);
+  margin-top: 10%;
+}
+
+.proj-description-en {
+  color: #ff5294;
+  font-size: 20px;
+  font-weight: lighter;
+  opacity: 0.9;
+}
+
+.project-visual {
+  flex: 1;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.eco-img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.star-banner {
+  position: absolute;
+  left: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 150px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.star-banner:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* página de contato */
+.page-contact {
+  position: relative;
+  background-color: #000;
+  background-image: url("assets/bubble.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: clamp(20px, 4vw, 60px);
+}
+
+.contact-text {
+  color: #f5f5f5;
+  font-size: 30px;
+  max-width: 1350px;
+  align-items: center;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.contact-en {
+  color: #ff5294;
+  font-size: 30px;
+  margin-top: 2%;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 3%;
+}
+
+.social-btn img {
+  width: 15px;
+  height: auto;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.social-btn:hover img {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+}
+
