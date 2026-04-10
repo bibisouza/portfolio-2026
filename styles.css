@@ -9,7 +9,7 @@
 body {
   min-height: 100vh;
   background-color: #ff5294;
-  background-image: url("../assets/textura.png");
+  background-image: url("assets/textura.png");
   background-size: cover;
   background-position: center;
   font-family: "Quicksand", sans-serif;
@@ -100,7 +100,7 @@ body {
 
 .div-title {
   font-family: "GayaTrial";
-  font-size: 180px;
+  font-size: 150px;
   align-items: center;
   text-align: center;
   color: #f5f5f5;
