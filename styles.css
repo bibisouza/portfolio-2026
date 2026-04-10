@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "GayaTrial";
+  src: url(assets/GAYATRIAL-ITALIC.OTF) format("opentype");
+  font-weight: normal;
+}
+
 /* página */
 
 body {
@@ -511,3 +517,65 @@ body {
   filter: brightness(1.2);
 }
 
+/* responsividade */
+@media (max-width: 768px) {
+  
+    .main-title {
+        font-size: clamp(80px, 20vw, 150px);
+        margin-top: 15vh;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .div-title {
+        font-size: 70px;
+    }
+    
+    .about-text {
+        font-size: 20px;
+    }
+
+    .skills-list {
+        gap: 30px;
+        flex-direction: column; 
+    }
+
+    /* Páginas de Projetos (3, 4 e 5) */
+    .project-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .project-info, .project-visual {
+        width: 100%;
+    }
+
+    .star-banner {
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+    }
+    
+    .star-banner:hover {
+        transform: translateX(-50%) scale(1.1);
+    }
+
+    .contact-text, .contact-en {
+        font-size: 18px;
+    }
+
+    .social-links img {
+        width: 40px; 
+    }
+
+    .navigation {
+        right: 20px;
+        bottom: 20px;
+    }
+}
